@@ -1,0 +1,18 @@
+## `nil` 
+- Examples 
+    - undefined instance attributes 
+    - default array value 
+    - default hash value 
+- Problem when introduction of `nil` isn’t local to use of the `nil` 
+    - Localizing failure: 
+        - Use `.fetch` method instead of keying in 
+        - Write proprietary attribute reader methods that return instance variables or raise custom errors (e.g. `NoSubscriptionError < Exception`) 
+    - Better to refactor code to make error impossible 
+    - `Model.find` method errors helpfully, but `Model.find_by_x` returns `nil` for nonexistent values 
+        - `Model.find_by_x!` returns exception 
+        - General principle: safer to use bang method whenever possible except for perhaps `update_attributes`  
+- Recap 
+    - Use your language and libraries intelligently 
+    - Invert the object relationship (e.g. place `Person` on `Subscription`, instead of `Subscription` on `Person`) 
+    - Guard agains tails in a manual attribute reader 
+    - Introduce new domain concepts 
