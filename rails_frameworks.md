@@ -36,3 +36,21 @@ Be able to describe MVC
 ## Railties 
 - Each component provides hooks to extend rails and/or modify initialization process 
 - Needed for interacting during or after a boot 
+
+## Elastic Search 
+- Apache Lucene 
+- Runs on Java, ergo cross-platform 
+- Designed to be scalable - distributed architecture 
+- Takes data from any source and turns into serachable format 
+- HTTP REST API - communicates with search server 
+- Open source 
+- Near real time 
+
+## Redis
+- Written in `C`, runs in memory 
+- Single server compatible
+- Pre-built data structures 
+    - Allows processing on DB-level instead of app 
+- Modules 
+- NoSQL 
+    - Uses data structures instead of tables/functions/procedures 
