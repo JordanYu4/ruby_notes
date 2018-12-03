@@ -16,6 +16,7 @@
     - Can handle clean-ups, billing-changes, mailings, test suites - essentially any group of small units running in parallel 
 - __ActiveSupport__: 
     - Handles langage extensions, utilities, transversal 
+    - `ActiveSupport::Concern` gracefully handles (abstracts away) module dependencies  
 - __ActiveStorage__: 
     - Handles attaching files to `ActiveRecord` models 
 - __ActionCable__: 
