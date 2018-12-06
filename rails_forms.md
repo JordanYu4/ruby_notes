@@ -8,8 +8,8 @@
 <ul>
   <% @roles.each do |role| %>
       <li>
-        <%= check_box_tag 'role_ids[]', role.id -%>
-        <%= h role.name -%>
+        <%= check_box_tag 'role_ids[]', role.id %>
+        <%= h role.name %>
       </li>
   <% end %>
 </ul>
