@@ -1,4 +1,6 @@
 =begin
+Problem case code snippet via Iain (https://stackoverflow.com/users/2290231/iain):
+
 if curr_company_user.is_sys_admin? && curr_company_user.can_crud_company_users? && params[:id].to_i != curr_company_user.id
 
   params[:company_user] = params[:company_user].except(:otp_set_up) if params[:company_user][:otp_set_up] == true
