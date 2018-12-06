@@ -30,6 +30,20 @@ class Hash
     include Allowable
 end
 
+# Usage 
+
+# Original params filtering: 
+=begin
+    params.require(:company_user).permit(:otp_setup).delete_if do |key, val|
+        key == 'otp_setup' && val == true
+    end
+=end 
+
+# Allowable gem methods 
+=begin 
+    params.require(:company_user).permit(:otp_setup).forbid(otp_setup: [true])
+=end
+
 # Benchmarking 
 
 # Issues installing ruby 2.4.1 via rbenv. Moved on for the sake of time. 
