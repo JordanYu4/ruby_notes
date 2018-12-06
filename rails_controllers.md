@@ -4,6 +4,7 @@
     - Beware: bypasses model validations, sending possibly invalid data to the database (emphasizes 
     value of having both model and DB validations)
 - `Model.update`updates all attributes, but passes through model validations 
+- `helper_method` makes methods defined in `application_controller.rb` available in views 
 
 #### Sources 
 - [Set attributes in ActiveRecord - David Verhasselt](https://davidverhasselt.com/set-attributes-in-activerecord/)
