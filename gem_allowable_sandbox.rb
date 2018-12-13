@@ -13,7 +13,7 @@ elsif etc. etc...
 # Allowable params filtering implementation purportedly faster than built-in delete_if function 
 module Allowable 
     def self.filter_match?(obj, key, val)
-        Array(val).include?(obj[key]) || val ==obj[key]
+        Array(val).include?(obj[key]) || val == obj[key]
     end
 
     def forbid(filters = {})
